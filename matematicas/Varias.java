@@ -1,46 +1,24 @@
 package matematicas;
-/*  */
 
 public class Varias{
 
-    public static boolean esCapicua(int x){
-        return capicua((long)x);
-    }
 
-    public static boolean esCapicua(long x){
-        return x==voltea(x);
-    }
+/****************** Ejercicio 9 QUITA POR DETRÁS ******************/
+public static long quitaPorDetras(long x, int n){
+    return x/(long)potencia(10,n);
+}
 
-    public static long voltea(int x){
-        return voltea((long)x);
+public static int quitaPorDetras(int x, int n){
+    return (int)quitaPorDetras((long)x, n);
+}
 
-        
-    }
+/****************** Ejercicio 14 JUNTA NUMEROS ******************/
+public static long juntaNumeros(long x, long y){
+    return x*(long) potencia(10,digitos(y))+y;
 
-    public static boolean esPrimo(long x){
-        if(x<0){
+}
 
-        }
-        if()
-
-        int divisor=2;
-        while(divisor++<=x/2){
-            if(x%divisor==0){
-                return false;
-            }
-        }
-        return true;
-    }
-
-    public static boolean esPrimo(int x){
-        return esPrimo((long)x);
-    }
-
-    public static long siguientePrimo(long x){
-        while(!esPrimo(0))
-    }
-
-    public static long siguientePrimo(int x){
-        return siguientePrimo((long)x);
-    }
+public static int juntaNumeros(int x, int y){
+    return (int) juntaNumeros((long)x, (long)y);
+}
 }
