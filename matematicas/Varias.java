@@ -45,6 +45,10 @@ public class Varias{
 
     public static long siguientePrimo(long n){
 
+        while(!esPrimo(++n));
+
+        return n;
+
     }
 
     public static int siguientePrimo(int n){
