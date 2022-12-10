@@ -3,6 +3,12 @@ import matematicas.Varias;
 public class Ejercicio {
     public static void main(String[] args) {
 
+        /****************** Ejercicio 1 ES CAPICUA ******************/
+
+        if(Varias.esCapicua(131)){
+            System.out.println("131 es capicua");
+        }
+
         /****************** Ejercicio 2 ES PRIMO ******************/
 
         if(Varias.esPrimo(7)){
