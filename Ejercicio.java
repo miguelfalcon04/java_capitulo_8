@@ -19,6 +19,10 @@ public class Ejercicio {
 
         System.out.println("El siguiente primo mayor a 100 es " +Varias.siguientePrimo(100));
 
+        /****************** Ejercicio 4 POTENCIA ******************/
+
+        System.out.println("Base 2 Exponente 3 "+Varias.potencia(2, 3));
+
 
         /****************** Ejercicio 5 DIGITOS ******************/
 
