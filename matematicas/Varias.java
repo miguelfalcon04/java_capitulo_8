@@ -6,22 +6,39 @@ public class Varias{
 
 /****************** Ejercicio 1 ES CAPICUA ******************/
 
-    public static long esCapicua(long n){
+    public static Boolean esCapicua(long n){
 
+        if(Varias.voltea(n)==n){
+            return true;
+        }else{
+            return false;
+        }
     }
 
-    public static int esCapicua(int n){
-        return (int)esCapicua((long)n);
+    public static Boolean esCapicua(int n){
+        return esCapicua((long)n);
     }
 
 /****************** Ejercicio 2 ES PRIMO ******************/
 
-    public static long esPrimo(long n){
+    public static Boolean esPrimo(long n){
 
+        if(n<2){
+            return false;
+        }else{
+
+            for(int i=2; i<(n/2)+1;i++){
+                if(n%i==0){
+                    return false;
+                }
+            }
+        }
+
+        return true;
     }
 
-    public static int esPrimo(int n){
-        return (int)esPrimo((long)n);
+    public static Boolean esPrimo(int n){
+        return esPrimo((long)n);
     }
 
 /****************** Ejercicio 3 SIGUIENTE PRIMO ******************/
@@ -58,7 +75,21 @@ public class Varias{
 
     public static long voltea(long n){
 
+        if (n<0){
+            return -voltea(-n);
+        }
+
+        long volteado=0;
+
+        do{
+            volteado=volteado*10+(n%10);
+            n=n/10;
+        }while(n>0);
+
+        return volteado;
     }
+
+    
 
     public static int voltea(int n){
         return (int)voltea((long)n);
