@@ -57,12 +57,23 @@ public class Varias{
 
 /****************** Ejercicio 4 POTENCIA ******************/
 
-    public static long potencia(long n, int x){
+    public static double potencia(long base, int exponente){
 
-    }
+        if(exponente==0){
+            return 1;
+        }
 
-    public static int potencia(int n, int x){
-        return (int)potencia((long)n, (long)x);
+        if(exponente<0){
+            return 1/potencia(base, -exponente);
+        }
+
+        double resul=1;
+
+        for(int i=0; i< Math.abs(exponente);i++){
+            resul=resul*base;
+        }
+
+        return resul;
     }
 
 /****************** Ejercicio 5 DIGITOS ******************/
