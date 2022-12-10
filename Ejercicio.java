@@ -15,6 +15,11 @@ public class Ejercicio {
             System.out.println("El 7 es primo");
         }
 
+        /****************** Ejercicio 3 SIGUIENTE PRIMO ******************/
+
+        System.out.println("El siguiente primo mayor a 100 es " +Varias.siguientePrimo(100));
+
+
         /****************** Ejercicio 5 DIGITOS ******************/
 
         System.out.println("El 5 volteado es "+ Varias.voltea(5));
