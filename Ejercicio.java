@@ -33,7 +33,9 @@ public class Ejercicio {
         System.out.println("El 4872 volteado es "+ Varias.voltea(4872));
         System.out.println("El -18947 volteado es "+ Varias.voltea(-18947));
 
+        /****************** Ejercicio 7 DIGITO POSICION ******************/
 
+        System.out.println("En la posicion 2 de 13412 está "+Varias.digitoN(13412,2));
         
     }
 }
