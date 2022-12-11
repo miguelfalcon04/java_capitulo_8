@@ -23,8 +23,11 @@ public class Ejercicio {
 
         System.out.println("Base 2 Exponente 3 "+Varias.potencia(2, 3));
 
-
         /****************** Ejercicio 5 DIGITOS ******************/
+
+        System.out.println("El numero 123456789 tine "+Varias.digitos(123456789)+" digitos");
+
+        /****************** Ejercicio 6 VOLTEA ******************/
 
         System.out.println("El 5 volteado es "+ Varias.voltea(5));
         System.out.println("El 4872 volteado es "+ Varias.voltea(4872));
