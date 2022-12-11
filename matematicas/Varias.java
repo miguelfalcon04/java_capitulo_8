@@ -80,6 +80,23 @@ public class Varias{
 
     public static long digitos(long n){
 
+        if(n<0){
+            n=-n;
+        }
+
+        if(n==0){
+            return 1;
+        }
+
+        int cont=0;
+
+        while(n>0){
+            n=n/10;
+            cont++;
+        }
+
+        return cont;
+
     }
 
     public static int digitos(int n){
@@ -103,8 +120,6 @@ public class Varias{
 
         return volteado;
     }
-
-    
 
     public static int voltea(int n){
         return (int)voltea((long)n);
