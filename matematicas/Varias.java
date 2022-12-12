@@ -141,8 +141,6 @@ public class Varias{
 
     }
 
-    
-
     public static int digitoN(int n, int pos){
         return (int)digitoN((long)n, pos);
     }
