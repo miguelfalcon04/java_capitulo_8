@@ -36,6 +36,11 @@ public class Ejercicio {
         /****************** Ejercicio 7 DIGITO POSICION ******************/
 
         System.out.println("En la posicion 2 de 13412 está "+Varias.digitoN(13412,2));
+
+        /****************** Ejercicio 9 QUITA POR DETRÁS ******************/
+
+        System.out.println("Quita por detrás 3 numeros de 123456789: "+Varias.quitaPorDetras(123456789, 3));
+
         
     }
 }
