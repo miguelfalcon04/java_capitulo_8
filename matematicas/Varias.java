@@ -127,12 +127,24 @@ public class Varias{
 
 /****************** Ejercicio 7 DIGITO POSICION ******************/
 
-    public static long digitoN(long n){
+    public static long digitoN(long n, int pos){
+
+        n=Varias.voltea(n);
+        long digito=0;
+
+        for(int i=0; i<pos;i++){
+            digito=n%10;
+            n=n/10;
+        }
+
+        return digito;
 
     }
 
-    public static int digitoN(int n){
-        return (int)digitoN((long)n);
+    
+
+    public static int digitoN(int n, int pos){
+        return (int)digitoN((long)n, pos);
     }
 
 /****************** Ejercicio 8 POSICION DE DIGITO ******************/
